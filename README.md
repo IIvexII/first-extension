@@ -1,24 +1,57 @@
-This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
+# Counter Extension
 
-## Getting Started
+A lightweight browser extension that adds a simple counter to your browser. Click the button to increment the counter. Clean, modern, and built with web technologies.
 
-First, run the development server:
+## Features
 
-```bash
-pnpm dev
-# or
-npm run dev
-```
+- Simple counter with increment functionality
+- Clean, modern UI built with TailwindCSS
+- Built with React and TypeScript for type safety
+- Easy to customize and extend
 
-Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
+## 🚀 Getting Started
 
-You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
+### Prerequisites
 
-For further guidance, [visit our Documentation](https://docs.plasmo.com/)
+- Node.js (v16 or later)
+- npm, pnpm, or yarn package manager
+- Modern web browser (Chrome, Firefox, Edge, etc.)
 
-## Making production build
+### Installation
 
-Run the following:
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/yourusername/my-first-extension.git
+   cd my-first-extension
+   ```
+
+2. Install dependencies
+
+   ```bash
+   pnpm install
+   # or
+   npm install
+   ```
+
+### Development
+
+1. Start the development server:
+
+   ```bash
+   pnpm dev
+   # or
+   npm run dev
+   ```
+
+2. Load the extension in your browser:
+   - Open your browser and navigate to `chrome://extensions/` (or equivalent for your browser)
+   - Enable "Developer mode"
+   - Click "Load unpacked" and select the `build/chrome-mv3-dev` directory
+
+## 🛠️ Building for Production
+
+To create a production build:
 
 ```bash
 pnpm build
@@ -26,8 +59,19 @@ pnpm build
 npm run build
 ```
 
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
+The production build will be available in the `build` directory, ready to be published to browser extension stores.
 
-## Submit to the webstores
+## 📦 Technologies Used
 
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+- [Plasmo](https://docs.plasmo.com/) - Browser extension framework
+- [React](https://reactjs.org/) - UI library
+- [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- [TailwindCSS](https://tailwindcss.com/) - Utility-first CSS framework
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
